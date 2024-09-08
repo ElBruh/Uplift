@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uplift</title>
+    <link rel="stylesheet" href="styles.css?foo=1234">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Uplift</h1>
+        </header>
+        <main>
+            <div class="card mood-card">
+                <div class="mood-section">
+                    <h3>How are you feeling today, friend?</h3>
+                    <div class="mood-dropdown">
+                        <select id="mood-select">
+                            <option value="">Share your mood with us</option>
+                            <option value="happy">Happy</option>
+                            <option value="sad">Sad</option>
+                            <option value="excited">Excited</option>
+                            <option value="stressed">Stressed</option>
+                            <option value="relaxed">Relaxed</option>
+                            <!-- Add more options as needed -->
+                        </select>
+                    </div>
+                    <div class="mood-slider">
+                        <label for="mood-rating">Rate the intensity of your feelings:</label>
+                        <input type="range" id="mood-rating" min="1" max="10" value="5">
+                        <span id="mood-rating-value">5</span>/10
+                    </div>
+                    <div class="mood-input">
+                        <label for="mood-input-text">Tell us more about what's on your mind:</label>
+                        <textarea id="mood-input-text" placeholder="I'm feeling..." rows="4" maxlength="500"></textarea>
+                        <div id="char-count">500 characters remaining</div>
+                    </div>
+                    <div class="query-section">
+                        <button id="query-ai">Get Personalized Advice</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card response-card">
+                <div class="response-section">
+                    <div class="response-card">
+                        <div class="response-header">
+                            <h2>Your Personalized Advice</h2>
+                            <div class="response-icon">
+                                <svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="20" cy="20" r="15" fill="white" />
+                                    <rect x="15" y="5" width="10" height="10" fill="#FF69B4" />
+                                    <rect x="5" y="15" width="10" height="10" fill="#FF69B4" />
+                                    <rect x="25" y="15" width="10" height="10" fill="#FF69B4" />
+                                    <rect x="15" y="25" width="10" height="10" fill="#FF69B4" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="response-body">
+                            <p id="response-text">Share your mood and thoughts with us, and we'll provide personalized advice to help you feel better.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p>&copy; 2024 Bruh Studios</p>
+        </footer>
+    </div>
+    <script src="script.js?foo=1234"></script>
+</body>
+
+</html>

@@ -1,0 +1,315 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #FFF0F5;
+    color: #663399;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.container::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background-color: #FF69B4;
+    border-radius: 50%;
+    animation: background-animation 10s infinite alternate;
+    z-index: -1;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Increased gap between cards */
+}
+
+.card {
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.mood-card {
+    background-color: #FFF0F5;
+    color: #663399;
+    position: relative;
+    overflow: hidden;
+}
+
+.response-card {
+    background-color: #FFF5EE;
+    color: #663399;
+}
+
+footer {
+    text-align: center;
+    font-size: 0.8rem;
+    color: #999999;
+}
+
+/* Upload Section */
+.upload-section {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.upload-label {
+    background-color: #FF69B4;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.upload-label::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.2);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.upload-label:hover::before {
+    opacity: 1;
+}
+
+#photo-upload {
+    display: none;
+}
+
+.upload-text {
+    margin-left: 10px;
+}
+
+.upload-icon {
+    font-size: 1.5rem;
+    margin-left: 10px;
+}
+
+/* Mood Section */
+.mood-dropdown, .mood-input {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.mood-dropdown select, .mood-input input {
+    appearance: none;
+    border: 2px solid #FF69B4;
+    padding: 10px;
+    width: 100%; /* Responsive width */
+    background: #f2f2f2;
+    font-size: 16px;
+    border-radius: 5px; /* Rounded corners */
+    box-sizing: border-box; /* Include padding and border in element's width */
+}
+
+.mood-input input {
+    margin-top: 10px; /* Space between dropdown and input */
+}
+
+.mood-input textarea {
+    appearance: none;
+    border: 2px solid #FF69B4;
+    padding: 10px;
+    width: 100%; /* Responsive width */
+    background: #f2f2f2;
+    font-size: 16px;
+    border-radius: 5px; /* Rounded corners */
+    box-sizing: border-box; /* Include padding and border in element's width */
+    resize: vertical; /* Allow the user to vertically resize the textarea; remove or change to 'none' to disable resizing */
+    font-family: 'Poppins', sans-serif; /* Match the font style of your site */
+}
+
+.mood-dropdown select::-ms-expand, .mood-input input::-ms-expand {
+    display: none;
+}
+
+.mood-dropdown select option {
+    padding: 10px;
+    font-size: 16px;
+}
+
+.mood-dropdown select option:hover {
+    background: #ccc;
+}
+
+.mood-slider {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.mood-slider label {
+    display: block;
+    margin-bottom: 10px;
+    color: #663399; /* Match your color scheme */
+}
+
+.mood-slider input[type=range] {
+    -webkit-appearance: none; /* Override default appearance */
+    width: 50%; /* Full-width */
+    height: 5px; /* Slider thickness */
+    background: #ddd; /* Background color */
+    outline: none; /* Remove outline */
+    opacity: 0.7; /* Partial transparency */
+    -webkit-transition: .2s; /* Transition for hover effect */
+    transition: opacity .2s;
+}
+
+.mood-slider input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default appearance */
+    appearance: none;
+    width: 25px; /* Handle width */
+    height: 25px; /* Handle height */
+    background: #FF69B4; /* Handle color */
+    cursor: pointer; /* Cursor on hover */
+    border-radius: 50%; /* Round handles */
+}
+
+.mood-slider input[type=range]::-moz-range-thumb {
+    width: 25px; /* Handle width */
+    height: 25px; /* Handle height */
+    background: #FF69B4; /* Handle color */
+    cursor: pointer; /* Cursor on hover */
+    border-radius: 50%; /* Round handles */
+}
+
+/* Query AI Button */
+.query-section {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#query-ai {
+    background-color: #FF69B4;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+#query-ai:hover {
+    background-color: #E0567A;
+}
+
+/* Response Section */
+.response-section {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.response-card {
+    background-color: #FFF5EE;
+    color: #663399;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    max-width: 800px; /* Set a maximum width */
+    margin: 0 auto; /* Center the card horizontally */
+    text-align: left;
+}
+
+.response-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.response-header h2 {
+    color: #663399;
+    margin: 0;
+    flex-grow: 1;
+}
+
+.response-icon {
+    width: 40px;
+    height: 40px;
+    background-color: #FF69B4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    position: relative;
+}
+
+.response-icon svg {
+    width: 100%;
+    height: 100%;
+    animation: rotate 5s infinite linear;
+}
+
+.response-icon.loading svg {
+    animation-duration: 1s;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.response-body p {
+    color: #663399;
+    line-height: 1.5;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .response-card {
+        max-width: 600px;
+    }
+}
+
+/* Responsive Styles */
+@media (max-width: 480px) {
+    .container {
+        padding: 10px;
+    }
+    .response-icon {
+        width: 40px;
+        height: 40px;
+    }
+    .response-card {
+        max-width: 90%;
+    }
+}
