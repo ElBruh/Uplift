@@ -20,7 +20,9 @@ This project is a web application that generates uplifting messages and Bible ve
 
 1. Clone the repository:
 
-'''git clone https://github.com/ElBruh/Uplift.git'''
+'''
+git clone https://github.com/ElBruh/Uplift.git
+'''
 
 2. Install Python dependencies:
 
