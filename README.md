@@ -13,7 +13,6 @@ This project is a web application that generates uplifting messages and Bible ve
 ## Prerequisites
 
 - Python 3.7+
-- Node.js and npm (for the JavaScript version)
 - Anthropic API key
 
 ## Installation
@@ -56,7 +55,6 @@ python app.py
 ## Configuration
 
 - The Flask app runs on port 5544 by default
-- The Express app runs on port 33787 by default
 - Logging is configured to write to `app.log`
 
 ## Future Improvements
