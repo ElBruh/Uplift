@@ -36,12 +36,6 @@ pip install flask requests anthropic
 export ANTHROPIC_API_KEY="your-api-key-here"
 ```
 
-5. For the JavaScript version, install Node.js dependencies:
-
-```
-npm install express multer @anthropic-ai/sdk
-```
-
 ## Usage
 
 ### Python Version
@@ -53,16 +47,6 @@ python app.py
 ```
 
 2. Open a web browser and navigate to `http://localhost:5544`
-
-### JavaScript Version
-
-1. Run the Express server:
-
-```
-node server.js
-```
-
-2. Open a web browser and navigate to `http://localhost:33787`
 
 ## API Endpoints
 
