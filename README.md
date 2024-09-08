@@ -20,19 +20,19 @@ This project is a web application that generates uplifting messages and Bible ve
 
 1. Clone the repository:
 
-"""git clone https://github.com/ElBruh/Uplift.git"""
+'''git clone https://github.com/ElBruh/Uplift.git'''
 
 2. Install Python dependencies:
 
-"""pip install flask requests anthropic"""
+'''pip install flask requests anthropic'''
 
 3. Set up your Anthropic API key as an environment variable:
 
-"""export ANTHROPIC_API_KEY='your-api-key-here'"""
+'''export ANTHROPIC_API_KEY="your-api-key-here"'''
 
 5. For the JavaScript version, install Node.js dependencies:
 
-"""npm install express multer @anthropic-ai/sdk"""
+'''npm install express multer @anthropic-ai/sdk'''
 
 ## Usage
 
@@ -40,7 +40,7 @@ This project is a web application that generates uplifting messages and Bible ve
 
 1. Run the Flask application:
 
-"""python app.py"""
+'''python app.py'''
 
 2. Open a web browser and navigate to `http://localhost:5544`
 
@@ -48,7 +48,7 @@ This project is a web application that generates uplifting messages and Bible ve
 
 1. Run the Express server:
 
-"""node server.js"""
+'''node server.js'''
 
 2. Open a web browser and navigate to `http://localhost:33787`
 
