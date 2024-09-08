@@ -47,11 +47,6 @@ python app.py
 
 2. Open a web browser and navigate to `http://localhost:5544`
 
-## API Endpoints
-
-- `/send_message` (POST): Send user mood data and receive an uplifting message
-- `/generate_image` (GET): Generate an image based on a prompt (work in progress)
-
 ## Configuration
 
 - The Flask app runs on port 5544 by default
